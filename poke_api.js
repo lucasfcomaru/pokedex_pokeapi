@@ -30,7 +30,9 @@ function mostra_resultado(dados) {
 
     // tratando caso não tenha nada digitado no input
     if (pokemon == "") {
-        resultado.innerHTML = "<p>Por favor, digite o nome do pokémon.</p>";
+        resultado.innerHTML =   `<div class="alert alert-dark" role="alert">
+                                    Por favor, digite o nome do Pokémon.
+                                </div>`;
     } else {
         if (dados.abilities.length == 1) {
             //Pega a imagem para inserir na div
