@@ -6,14 +6,16 @@ function consulta_pokemon() {
     let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
 
     // pega os dados da API
-    fetch(url).then(function(response){
-        response.json().then(function(data){
-            //trocar pela função que vai mostrar os resultados
-            mostra_resultado(data);
-        })
+    fetch(url)
+    .then(response => {
+        if(response.status === 404){
+            throw new Error("Pokemon não encontrado")
+        }
+        return response.json()
     })
-    
-}
+    .then(data => mostra_resultado(data))
+    .catch(error => alert(error.message))
+}  
 
 function mostra_resultado(dados) {
     // pega a div pelo onde vai armazenar o resultado pelo ID
@@ -88,7 +90,6 @@ function mostra_resultado(dados) {
                                         <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>`;
             }
         }
-        
     } catch(erro) {
         // tratando caso dê um erro na busca
         resultado.innerHTML = `<p>Pokémon não encontrado.</p>`
