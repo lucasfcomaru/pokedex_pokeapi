@@ -48,11 +48,17 @@ function mostra_resultado(dados) {
                                     <p><b>Habilidades: </b>${dados.abilities[0].ability.name}`;
             // Pegando os atributos
             atributos.innerHTML = ` <p><b>HP: </b>${dados.stats[0].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[0].base_stat}px;"></div>
                                     <p><b>Ataque: </b>${dados.stats[1].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[1].base_stat}px;"></div>
                                     <p><b>Defesa: </b>${dados.stats[2].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[2].base_stat}px;"></div>
                                     <p><b>Ataque Especial: </b>${dados.stats[3].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[3].base_stat}px;"></div>
                                     <p><b>Defesa Especial: </b>${dados.stats[4].base_stat}</p>
-                                    <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>`;
+                                    <div class="barra_atributo" style="width:${dados.stats[4].base_stat}px;"></div>
+                                    <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[5].base_stat}px;"></div>`;
 
         } else if (dados.abilities.length == 2){
             //Pega a imagem para inserir na div
@@ -69,11 +75,17 @@ function mostra_resultado(dados) {
                                     <p><b>Habilidades: </b>${dados.abilities[0].ability.name}, ${dados.abilities[1].ability.name}</p>`;
             // Pegando os atributos
             atributos.innerHTML = ` <p><b>HP: </b>${dados.stats[0].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[0].base_stat}px;"></div>
                                     <p><b>Ataque: </b>${dados.stats[1].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[1].base_stat}px;"></div>
                                     <p><b>Defesa: </b>${dados.stats[2].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[2].base_stat}px;"></div>
                                     <p><b>Ataque Especial: </b>${dados.stats[3].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[3].base_stat}px;"></div>
                                     <p><b>Defesa Especial: </b>${dados.stats[4].base_stat}</p>
-                                    <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>`;
+                                    <div class="barra_atributo" style="width:${dados.stats[4].base_stat}px;"></div>
+                                    <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[5].base_stat}px;"></div>`;
         } else {
             //Pega a imagem para inserir na div
             imagem.innerHTML = `<img src="${dados.sprites.front_default}" title="${dados.name}" alt="${dados.name}">`;
@@ -88,11 +100,17 @@ function mostra_resultado(dados) {
                                     <p><b>Principais habilidades: </b>${dados.abilities[0].ability.name},<br>${dados.abilities[1].ability.name}, ${dados.abilities[2].ability.name}</p>`;
             // Pegando os atributos
             atributos.innerHTML = ` <p><b>HP: </b>${dados.stats[0].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[0].base_stat}px;"></div>
                                     <p><b>Ataque: </b>${dados.stats[1].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[1].base_stat}px;"></div>
                                     <p><b>Defesa: </b>${dados.stats[2].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[2].base_stat};"></div>
                                     <p><b>Ataque Especial: </b>${dados.stats[3].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[3].base_stat};"></div>
                                     <p><b>Defesa Especial: </b>${dados.stats[4].base_stat}</p>
-                                    <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>`;
+                                    <div class="barra_atributo" style="width:${dados.stats[4].base_stat};"></div>
+                                    <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>
+                                    <div class="barra_atributo" style="width:${dados.stats[5].base_stat};"></div>`;
         }
     }
 }

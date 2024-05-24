@@ -69,3 +69,10 @@ body{
     font-size: 12px;
     font-style: italic;
 }
+
+/* barras de atributos */
+.barra_atributo {
+    height: 10px;
+    background-color: blue;
+    border-radius: 3px;
+}
