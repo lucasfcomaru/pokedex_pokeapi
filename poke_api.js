@@ -33,9 +33,10 @@ function mostra_resultado(dados) {
         resultado.innerHTML = "<p>Por favor, digite o nome do pokémon.</p>";
     } else {
         if (dados.abilities.length == 1) {
+            //Pega a imagem para inserir na div
+            imagem.innerHTML = `<img src="${dados.sprites.front_default}" title="${dados.name}" alt="${dados.name}">`;
             // Pegando os atributos principais
-            resultado.innerHTML = ` <img src="${dados.sprites.front_default}" title="${dados.name}" alt="${dados.name}">
-                                    <p><b>Número: </b>${dados.id}</p>
+            resultado.innerHTML = ` <p><b>Número: </b>${dados.id}</p>
                                     <p><b>Nome: </b>${dados.name}</p>
                                     <p><b>Tipo: </b>${dados.types[0].type.name}</p>
                                     <!-- convertendo altura -->
@@ -52,9 +53,11 @@ function mostra_resultado(dados) {
                                     <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>`;
 
         } else if (dados.abilities.length == 2){
+            //Pega a imagem para inserir na div
+            imagem.innerHTML = `<img src="${dados.sprites.front_default}" title="${dados.name}" alt="${dados.name}">`;
+
             // Pegando os atributos principais
-            resultado.innerHTML = ` <img src="${dados.sprites.front_default}" title="${dados.name}" alt="${dados.name}">
-                                    <p><b>Número: </b>${dados.id}</p>
+            resultado.innerHTML = ` <p><b>Número: </b>${dados.id}</p>
                                     <p><b>Nome: </b>${dados.name}</p>
                                     <p><b>Tipo: </b>${dados.types[0].type.name}</p>
                                     <!-- convertendo altura -->
@@ -70,9 +73,10 @@ function mostra_resultado(dados) {
                                     <p><b>Defesa Especial: </b>${dados.stats[4].base_stat}</p>
                                     <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>`;
         } else {
+            //Pega a imagem para inserir na div
+            imagem.innerHTML = `<img src="${dados.sprites.front_default}" title="${dados.name}" alt="${dados.name}">`;
             // Pegando os atributos principais
-            resultado.innerHTML = ` <img src="${dados.sprites.front_default}" title="${dados.name}" alt="${dados.name}">
-                                    <p><b>Número: </b>${dados.id}</p>
+            resultado.innerHTML = ` <p><b>Número: </b>${dados.id}</p>
                                     <p><b>Nome: </b>${dados.name}</p>
                                     <p><b>Tipo: </b>${dados.types[0].type.name}</p>
                                     <!-- convertendo altura -->
