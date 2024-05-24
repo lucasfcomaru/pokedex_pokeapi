@@ -85,7 +85,7 @@ function mostra_resultado(dados) {
                                     <p><b>Altura: </b>${dados.height}0 cm</p>
                                     <!-- convertendo peso -->
                                     <p><b>Peso: </b>${dados.weight / 10} kg</p>
-                                    <p><b>Principais habilidades: </b>${dados.abilities[0].ability.name}, ${dados.abilities[1].ability.name}, ${dados.abilities[2].ability.name}</p>`;
+                                    <p><b>Principais habilidades: </b>${dados.abilities[0].ability.name},<br>${dados.abilities[1].ability.name}, ${dados.abilities[2].ability.name}</p>`;
             // Pegando os atributos
             atributos.innerHTML = ` <p><b>HP: </b>${dados.stats[0].base_stat}</p>
                                     <p><b>Ataque: </b>${dados.stats[1].base_stat}</p>

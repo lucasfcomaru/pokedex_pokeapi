@@ -13,6 +13,11 @@ html {
     align-items: center;
 }
 
+body{
+    background: url(assets/background.jpg) no-repeat;
+    background-size: cover;
+}
+
 #autor {
     font-size: 14px;
 }
