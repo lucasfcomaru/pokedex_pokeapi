@@ -104,13 +104,13 @@ function mostra_resultado(dados) {
                                     <p><b>Ataque: </b>${dados.stats[1].base_stat}</p>
                                     <div class="barra_atributo" style="width:${dados.stats[1].base_stat}px;"></div>
                                     <p><b>Defesa: </b>${dados.stats[2].base_stat}</p>
-                                    <div class="barra_atributo" style="width:${dados.stats[2].base_stat};"></div>
+                                    <div class="barra_atributo" style="width:${dados.stats[2].base_stat}px;"></div>
                                     <p><b>Ataque Especial: </b>${dados.stats[3].base_stat}</p>
-                                    <div class="barra_atributo" style="width:${dados.stats[3].base_stat};"></div>
+                                    <div class="barra_atributo" style="width:${dados.stats[3].base_stat}px;"></div>
                                     <p><b>Defesa Especial: </b>${dados.stats[4].base_stat}</p>
-                                    <div class="barra_atributo" style="width:${dados.stats[4].base_stat};"></div>
+                                    <div class="barra_atributo" style="width:${dados.stats[4].base_stat}px;"></div>
                                     <p><b>Velocidade: </b>${dados.stats[5].base_stat}</p>
-                                    <div class="barra_atributo" style="width:${dados.stats[5].base_stat};"></div>`;
+                                    <div class="barra_atributo" style="width:${dados.stats[5].base_stat}px;"></div>`;
         }
     }
 }
