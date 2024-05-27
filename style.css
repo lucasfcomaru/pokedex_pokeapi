@@ -90,12 +90,18 @@ body{
 @media (max-width: 800px) {
     body{
         background: url(assets/background.jpg) no-repeat;
+        background-attachment: fixed;
         background-size: cover;
         background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #container {
         width: 90%;
+        max-height: 100vh; 
+        overflow: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
