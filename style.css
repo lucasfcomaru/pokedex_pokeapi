@@ -86,3 +86,55 @@ body{
     border-radius: 2px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 800px) {
+    body{
+        background: url(assets/background.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pesquisa {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #pesquisa button {
+        width: 100%;
+    }
+
+    #informacao{
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        /* align-items: left; */
+    }
+
+    #imagem{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* min-width: 80px; */
+    }
+    #imagem img {
+        width: 100%;
+    }
+
+    #resultado {
+        width: 100%;
+    }
+    
+    #atributos {
+        width: 100%;
+    }
+}
